@@ -1,6 +1,8 @@
-1.git ssh安装
+﻿1.git ssh安装
   http://www.zhixing123.cn/ubuntu/37865.html
 
+git config --global user.name "yuan"
+git config --global user.email "yuan@qq.com"
 2.使用
   (1)选定文件夹为git 本地仓库
      进入 git 本地仓库文件夹 执行:git init
