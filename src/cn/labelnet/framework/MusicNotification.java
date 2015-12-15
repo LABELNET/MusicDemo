@@ -135,11 +135,12 @@ public class MusicNotification extends Notification {
 				.setSmallIcon(R.drawable.logo);
 
 		// 兼容性实现
-		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
-			musicNotifi = builder.getNotification();
-		} else {
-			musicNotifi = builder.build();
-		}
+		musicNotifi = builder.getNotification();
+//		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
+//			musicNotifi = builder.getNotification();
+//		} else {
+//			musicNotifi = builder.build();
+//		}
 		musicNotifi.flags = Notification.FLAG_ONGOING_EVENT;
 		manager.notify(NOTIFICATION_ID, musicNotifi);
 	}
