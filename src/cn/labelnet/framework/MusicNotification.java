@@ -73,7 +73,7 @@ public class MusicNotification extends Notification {
 				R.layout.list_item_notification);
 		builder = new Builder(context);
 
-		// 初始化 进度条
+		// 初始化控制的Intent
 		play = new Intent();
 		play.setAction(MUSIC_NOTIFICATION_ACTION_PLAY);
 		next = new Intent();
