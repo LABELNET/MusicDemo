@@ -71,6 +71,7 @@
    -背景
    -BoardCastReceiver作用
    -过程分析总结
+   http://img.blog.csdn.net/20151216151717257
    
 ##11.MusicListActivity - 分类信息界面实现
    -背景
