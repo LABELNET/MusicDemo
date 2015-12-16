@@ -360,9 +360,7 @@ public class LrcView extends View implements MusicAsyncGetUrl, LrcPlayToEnd {
 				
 			}
 		}, 2000);
-
 		
-		// 暂时没有使用
 		// 遇到问题 ，从MusicService 的 时间，很难与 集合中的时间匹配成功！
 
 	}
