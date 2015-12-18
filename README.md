@@ -66,7 +66,7 @@
    -倒计时实现
    -进度条实现
    -基本控制实现总结
-   
+   ----------------------------------------------------------------------
 ##10.MusicActivity - 与MusicService ,Notification 
    -背景
    -BoardCastReceiver作用
@@ -85,14 +85,19 @@
    -与MainActivity 的关系
    -总结
   
-##13.MaskMusic - 启动页  
-   -内容设定
-   -没有网络不让其进入应用
-   -判断网络
+##13.MaskMusic - 启动页与社交分享（ShareSDK）
+   -背景
+   -启动页实现
+   -环境搭建
+   -分享实现 （新浪，QQ，QQ空间）
+   -总结
    
 ##14.MaskMusic - 优化退出
-   -Service 
-   -Notification
+   -Service （Destory）
+   -Notification (cancelNotification)
+   -主页与分类页面的一个错误解决
+   -按下两次退出
+   -总结
    
 ##15.MaskMusic项目总结
    -心得
