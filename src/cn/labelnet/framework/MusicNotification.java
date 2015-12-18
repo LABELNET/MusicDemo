@@ -73,7 +73,11 @@ public class MusicNotification extends Notification {
 				R.layout.list_item_notification);
 		builder = new Builder(context);
 
+<<<<<<< HEAD
 		// 初始化 进度条
+=======
+		// 初始化控制的Intent
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 		play = new Intent();
 		play.setAction(MUSIC_NOTIFICATION_ACTION_PLAY);
 		next = new Intent();
@@ -135,11 +139,20 @@ public class MusicNotification extends Notification {
 				.setSmallIcon(R.drawable.logo);
 
 		// 兼容性实现
+<<<<<<< HEAD
 		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
 			musicNotifi = builder.getNotification();
 		} else {
 			musicNotifi = builder.build();
 		}
+=======
+		musicNotifi = builder.getNotification();
+//		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
+//			musicNotifi = builder.getNotification();
+//		} else {
+//			musicNotifi = builder.build();
+//		}
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 		musicNotifi.flags = Notification.FLAG_ONGOING_EVENT;
 		manager.notify(NOTIFICATION_ID, musicNotifi);
 	}

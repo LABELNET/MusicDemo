@@ -4,7 +4,10 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.util.List;
 
+<<<<<<< HEAD
 import cn.labelnet.maskmusic.MainActivity;
+=======
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 import cn.labelnet.model.MusicModel;
 import android.app.NotificationManager;
 import android.app.Service;
@@ -18,7 +21,10 @@ import android.media.MediaPlayer.OnErrorListener;
 import android.media.MediaPlayer.OnPreparedListener;
 import android.net.Uri;
 import android.os.IBinder;
+<<<<<<< HEAD
 import android.os.SystemClock;
+=======
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 import android.widget.MediaController.MediaPlayerControl;
 import android.widget.Toast;
 
@@ -71,9 +77,12 @@ public class MusicService extends Service implements OnPreparedListener,
 
 	// Intent keys
 	private final String MAIN_MUSIC_INTENT_KEY = "mIntent";
+<<<<<<< HEAD
 	
 	//停止服务的intent
 	private Intent stopIntent;
+=======
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 
 	@Override
 	public void onCreate() {
@@ -112,7 +121,10 @@ public class MusicService extends Service implements OnPreparedListener,
 	@SuppressWarnings("unchecked")
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
+<<<<<<< HEAD
 		this.stopIntent=intent;
+=======
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 		try{
 		musics = (List<MusicModel>) intent
 				.getSerializableExtra(MUSIC_INTENT_KEY);
@@ -134,6 +146,7 @@ public class MusicService extends Service implements OnPreparedListener,
 			mp = null;
 			musics = null;
 		}
+<<<<<<< HEAD
 		stopService(stopIntent);
 		//取消通知
 		musicNotifi.onCancelMusicNotifi();
@@ -141,6 +154,10 @@ public class MusicService extends Service implements OnPreparedListener,
 		unregisterReceiver(musicBroadCast);
 		//关闭应用
 		System.exit(0);
+=======
+		// 取消注册的广播
+		unregisterReceiver(musicBroadCast);
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 	}
 
 	// //////////////////////////////Music Util//////////////////////
@@ -321,7 +338,12 @@ public class MusicService extends Service implements OnPreparedListener,
 			case 30003:
 				// 关闭通知栏
 				musicNotifi.onCancelMusicNotifi();
+<<<<<<< HEAD
 				onDestroy();
+=======
+				// 停止音乐
+				stop();
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 				break;
 			}
 			

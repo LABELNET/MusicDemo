@@ -2,7 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="80dp"
+<<<<<<< HEAD
     android:background="@drawable/list_tv_bg">
+=======
+    android:background="@color/app_color_whrit">
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 
                 <ImageView
                     android:id="@+id/mlist_iv_music_songpic"

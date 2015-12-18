@@ -69,6 +69,7 @@ containing a value of this type.
         public static final int heart_net=0x7f020003;
         public static final int hongkang=0x7f020004;
         public static final int ic_launcher=0x7f020005;
+<<<<<<< HEAD
         public static final int list_tv_bg=0x7f020006;
         public static final int logo=0x7f020007;
         public static final int main_fliper_in=0x7f020008;
@@ -267,11 +268,42 @@ containing a value of this type.
         public static final int imagesLinearLayout=0x7f070040;
         public static final int iv_item_main_gird=0x7f070027;
         public static final int iv_list_item_flipper=0x7f070024;
+=======
+        public static final int logo=0x7f020006;
+        public static final int main_fliper_in=0x7f020007;
+        public static final int main_fliper_out=0x7f020008;
+        public static final int main_tv_bg=0x7f020009;
+        public static final int mingyao=0x7f02000a;
+        public static final int moren=0x7f02000b;
+        public static final int moren_big=0x7f02000c;
+        public static final int music_back=0x7f02000d;
+        public static final int music_bg_three=0x7f02000e;
+        public static final int music_down=0x7f02000f;
+        public static final int music_heart_small_two=0x7f020010;
+        public static final int music_list_left=0x7f020011;
+        public static final int music_new=0x7f020012;
+        public static final int next=0x7f020013;
+        public static final int oumei=0x7f020014;
+        public static final int pause=0x7f020015;
+        public static final int play=0x7f020016;
+        public static final int player=0x7f020017;
+        public static final int prevers=0x7f020018;
+        public static final int riben=0x7f020019;
+        public static final int sousuo=0x7f02001a;
+        public static final int test_bg=0x7f02001b;
+        public static final int xiaoliang=0x7f02001c;
+        public static final int yaogun=0x7f02001d;
+    }
+    public static final class id {
+        public static final int iv_item_main_gird=0x7f070025;
+        public static final int iv_list_item_flipper=0x7f070023;
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
         public static final int iv_main_music=0x7f070002;
         public static final int iv_main_search=0x7f070001;
         public static final int iv_music_back=0x7f07000d;
         public static final int iv_music_download=0x7f07000f;
         public static final int iv_music_songpic=0x7f070010;
+<<<<<<< HEAD
         public static final int iv_nofitication_kzhi_colse=0x7f070035;
         public static final int iv_nofitication_kzhi_next=0x7f070034;
         public static final int iv_nofitication_kzhi_play=0x7f070033;
@@ -291,11 +323,31 @@ containing a value of this type.
         public static final int mlist_iv_music_songpic=0x7f07002c;
         public static final int mlist_tv_music_singer=0x7f07002e;
         public static final int mlist_tv_music_songname=0x7f07002d;
+=======
+        public static final int iv_nofitication_kzhi_colse=0x7f070033;
+        public static final int iv_nofitication_kzhi_next=0x7f070032;
+        public static final int iv_nofitication_kzhi_play=0x7f070031;
+        public static final int iv_notification_logo=0x7f07002e;
+        public static final int list_item_play=0x7f070027;
+        public static final int list_recycler_view=0x7f070020;
+        public static final int list_top=0x7f07001d;
+        public static final int lrc=0x7f070014;
+        public static final int main_gridview=0x7f070008;
+        public static final int main_lineat_layout=0x7f070007;
+        public static final int main_list_view=0x7f070022;
+        public static final int main_listview_fragement=0x7f07000a;
+        public static final int main_scroll_view=0x7f070004;
+        public static final int main_view_flipper=0x7f070005;
+        public static final int mlist_iv_music_songpic=0x7f07002a;
+        public static final int mlist_tv_music_singer=0x7f07002c;
+        public static final int mlist_tv_music_songname=0x7f07002b;
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
         public static final int music_next=0x7f070018;
         public static final int music_play=0x7f070017;
         public static final int music_prev=0x7f070019;
         public static final int music_show_gone=0x7f070016;
         public static final int music_tv_test=0x7f07000e;
+<<<<<<< HEAD
         public static final int nameTextView=0x7f070049;
         public static final int okImageView=0x7f070046;
         public static final int progressbar_music=0x7f07001a;
@@ -314,6 +366,19 @@ containing a value of this type.
         public static final int tv_list_return=0x7f07001e;
         public static final int tv_list_type=0x7f07001f;
         public static final int tv_list_wen=0x7f070025;
+=======
+        public static final int progressbar_music=0x7f07001a;
+        public static final int relative_top=0x7f07000c;
+        public static final int swiperefresh_wei=0x7f070003;
+        public static final int tv_item_heart=0x7f07002d;
+        public static final int tv_item_main_grid=0x7f070026;
+        public static final int tv_item_name=0x7f070028;
+        public static final int tv_item_singer=0x7f070029;
+        public static final int tv_list_item_num=0x7f070024;
+        public static final int tv_list_item_show=0x7f070021;
+        public static final int tv_list_return=0x7f07001e;
+        public static final int tv_list_type=0x7f07001f;
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
         public static final int tv_main_bangdan=0x7f070006;
         public static final int tv_main_more=0x7f07000b;
         public static final int tv_main_title=0x7f070000;
@@ -321,17 +386,26 @@ containing a value of this type.
         public static final int tv_music_heart=0x7f070013;
         public static final int tv_music_singer=0x7f070012;
         public static final int tv_music_songname=0x7f070011;
+<<<<<<< HEAD
         public static final int tv_nofitication_singer=0x7f070032;
         public static final int tv_nofitication_singname=0x7f070031;
         public static final int tv_song_lrc=0x7f070015;
         public static final int tv_time_all=0x7f07001c;
         public static final int tv_time_sheng=0x7f07001b;
         public static final int tv_welcome_logo=0x7f070022;
+=======
+        public static final int tv_nofitication_singer=0x7f070030;
+        public static final int tv_nofitication_singname=0x7f07002f;
+        public static final int tv_song_lrc=0x7f070015;
+        public static final int tv_time_all=0x7f07001c;
+        public static final int tv_time_sheng=0x7f07001b;
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int activity_music=0x7f030001;
         public static final int activity_music_list=0x7f030002;
+<<<<<<< HEAD
         public static final int activity_welcome=0x7f030003;
         public static final int fragment_main_listview_layout=0x7f030004;
         public static final int list_item_main_flipper=0x7f030005;
@@ -474,6 +548,52 @@ containing a value of this type.
         public static final int tv_main_title=0x7f05005f;
         public static final int tv_main_xindie=0x7f05005b;
         public static final int tv_mian_nomsg=0x7f05005e;
+=======
+        public static final int fragment_main_listview_layout=0x7f030003;
+        public static final int list_item_main_flipper=0x7f030004;
+        public static final int list_item_main_gridview=0x7f030005;
+        public static final int list_item_main_layout=0x7f030006;
+        public static final int list_item_music_layout=0x7f030007;
+        public static final int list_item_music_no_layout=0x7f030008;
+        public static final int list_item_notification=0x7f030009;
+    }
+    public static final class string {
+        public static final int app_name=0x7f050000;
+        public static final int hello_world=0x7f050001;
+        public static final int item_notifiaction_singer=0x7f05000d;
+        public static final int item_notification_singname=0x7f05000c;
+        public static final int list_item_flipper_tv=0x7f05000a;
+        public static final int list_item_flipper_tv1=0x7f050008;
+        public static final int list_item_flipper_tv2=0x7f050009;
+        public static final int list_item_grid_tv=0x7f05000b;
+        public static final int list_item_singer_name=0x7f050005;
+        public static final int list_item_song_name=0x7f050004;
+        public static final int main_item_num=0x7f05000e;
+        public static final int maskmusic_welcome=0x7f050022;
+        public static final int msuic_acitivity_nolrc=0x7f050014;
+        public static final int msuic_fenlei_xiaoliang=0x7f050018;
+        public static final int music_activity_nolrc=0x7f050015;
+        public static final int music_activity_renxinghua=0x7f050013;
+        public static final int music_fenlei_china=0x7f050019;
+        public static final int music_fenlei_hangkang=0x7f05001b;
+        public static final int music_fenlei_hanguo=0x7f05001c;
+        public static final int music_fenlei_mingyao=0x7f050017;
+        public static final int music_fenlei_oumei=0x7f05001a;
+        public static final int music_fenlei_riben=0x7f05001d;
+        public static final int music_fenlei_yaogun=0x7f05001e;
+        public static final int music_jin_du=0x7f050011;
+        public static final int music_list_resou=0x7f050021;
+        public static final int music_list_title=0x7f050020;
+        public static final int music_play_return=0x7f05000f;
+        public static final int music_song_ci=0x7f050010;
+        public static final int music_songname_sm=0x7f050016;
+        public static final int procress_1_23=0x7f050012;
+        public static final int title_activity_music_list=0x7f05001f;
+        public static final int tv_main_bangdan=0x7f050002;
+        public static final int tv_main_title=0x7f050007;
+        public static final int tv_main_xindie=0x7f050003;
+        public static final int tv_mian_nomsg=0x7f050006;
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
     }
     public static final class style {
         /** 

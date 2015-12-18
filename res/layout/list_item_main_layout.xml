@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+<<<<<<< HEAD
     android:background="@drawable/main_tv_bg"
+=======
+    android:background="@color/text_color_whrit"
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
     android:layout_height="70dp" >
 
     <TextView

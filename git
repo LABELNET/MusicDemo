@@ -1,0 +1,42 @@
+﻿1.git ssh安装
+  http://www.zhixing123.cn/ubuntu/37865.html
+
+git config --global user.name "yuan"
+git config --global user.email "yuan@qq.com"
+2.使用
+  (1)选定文件夹为git 本地仓库
+     进入 git 本地仓库文件夹 执行:git init
+      
+  (2)提交到本地
+     git add . 
+     (add . 代表所有的文件, 也可以 指定某个 文件: add 文件名)
+  (3)写描述
+     git commit -m "描述内容"
+  (4)提交到 github 
+    
+     1)提交的地址:git remote add origin git@github.com:LABELNET/AndroidDemos.git
+     2)第一次需要执行 pull 操作:git pull -u origin master
+     3)执行push操作:git push -u origin master
+
+
+ AndroidDemos1:
+(Android盘 下的 pgworkspace 和 workspace5 下的 demo)
+(版本控制在 demo文件夹下)
+git@github.com:LABELNET/AndroidDemos1.git
+
+ AndroidDemo:
+(在 主文件夹下 的 workspace 文件下 Android demo)
+git@github.com:LABELNET/AndroidDemos.git
+
+ AndroidUtil:
+(安卓工具类为 Android /demo 文件夹下的 调用包 )
+git@github.com:LABELNET/AndroidUtil.git
+
+AndroidStudioDemo :
+(主文件夹下的 StudioProjects/)
+git@github.com:LABELNET/AndroidStudioDemo.git
+
+
+github 地址:
+https://github.com/LABELNET
+

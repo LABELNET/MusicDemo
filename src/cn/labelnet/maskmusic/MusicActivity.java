@@ -382,6 +382,7 @@ public class MusicActivity extends Activity implements OnClickListener,
 
 		@Override
 		public void onTick(long millisUntilFinished) {
+<<<<<<< HEAD
 			second = millisUntilFinished / 1000;
 			tv_time_sheng.setText(TimeUtil.getMinuteBySecond((int) second));
 			// 进度条实现
@@ -389,6 +390,16 @@ public class MusicActivity extends Activity implements OnClickListener,
 			// Log.d("MaskMusic", "tick : "+second);
 			progressbar_music.setProgress((int) second);
 			// 歌词
+=======
+			//倒计时显示操作
+			second = millisUntilFinished / 1000;
+			tv_time_sheng.setText(TimeUtil.getMinuteBySecond((int) second));
+			// 进度条实现更新操作
+			second = (allSecond - second) / allSecond * 100;
+			// 
+			progressbar_music.setProgress((int) second);
+			// 歌词更新操作
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 			second = allSecond * 1000 - millisUntilFinished;
 			// Log.d("MaskMusic", "geci  : "+(long)second);
 			lrc.updateTime((long) second);

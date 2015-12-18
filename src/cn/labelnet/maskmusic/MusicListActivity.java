@@ -9,7 +9,10 @@ import java.util.Map;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.os.Handler;
+=======
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -42,8 +45,11 @@ public class MusicListActivity extends Activity implements MusicAsync,
 	private MusicTypeListAdapter musicTypeAdapter;
 	private ImageView tv_list_return;
 	private SparseArray<String> maps = new SparseArray<String>();
+<<<<<<< HEAD
 	
 	private final int REQUEST_CODE=123;
+=======
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 
 	/**
 	 * 网络数据
@@ -68,9 +74,12 @@ public class MusicListActivity extends Activity implements MusicAsync,
 	// 滚动条
 	private SwipeRefreshLayout swiperefresh_wei;
 	private int typeid = 5;
+<<<<<<< HEAD
 	
 	//
 	private Handler handler=new Handler();
+=======
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -111,6 +120,10 @@ public class MusicListActivity extends Activity implements MusicAsync,
 			}
 		});
 		swifRefushListener.onRefresh();
+<<<<<<< HEAD
+=======
+
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 	}
 
 
@@ -231,17 +244,23 @@ public class MusicListActivity extends Activity implements MusicAsync,
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.tv_list_return:
+<<<<<<< HEAD
 			startActivityForResult(new Intent(MusicListActivity.this,MainActivity.class),REQUEST_CODE);
+=======
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 			finish();
 			break;
 		}
 	}
 
+<<<<<<< HEAD
 	@Override
 	public void onBackPressed() {
 		startActivityForResult(new Intent(MusicListActivity.this,MainActivity.class),REQUEST_CODE);
 		finish();
 	}
+=======
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 	
 	/**
 	 * 1.下拉刷新监听 下拉刷新
@@ -250,6 +269,7 @@ public class MusicListActivity extends Activity implements MusicAsync,
 
 		@Override
 		public void onRefresh() {
+<<<<<<< HEAD
 			handler.postDelayed(new Runnable() {
 				
 				@Override
@@ -258,6 +278,11 @@ public class MusicListActivity extends Activity implements MusicAsync,
 					hideProgress();
 				}
 			}, 3000);
+=======
+             //进度条监听事件
+			musicRequest.requestStringData(typeid);
+			tv_list_type.setText(maps.get(typeid));
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 		}
 	}
 	

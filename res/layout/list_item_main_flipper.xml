@@ -17,7 +17,10 @@
         android:background="@color/app_color_borwn" >
 
         <TextView
+<<<<<<< HEAD
             android:id="@+id/tv_list_wen"
+=======
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center|left"

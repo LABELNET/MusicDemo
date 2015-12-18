@@ -1,7 +1,10 @@
 package cn.labelnet.maskmusic;
 
 import java.io.Serializable;
+<<<<<<< HEAD
 import java.util.ArrayList;
+=======
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -12,7 +15,10 @@ import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
+<<<<<<< HEAD
 import android.util.Log;
+=======
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 import android.util.SparseArray;
 import android.view.GestureDetector;
 import android.view.GestureDetector.SimpleOnGestureListener;
@@ -39,8 +45,11 @@ import cn.labelnet.model.MusicModel;
 import cn.labelnet.net.VolleyHttpPath;
 import cn.labelnet.net.VolleyHttpRequest;
 import cn.labelnet.util.ViewUtil;
+<<<<<<< HEAD
 import cn.sharesdk.framework.ShareSDK;
 import cn.sharesdk.onekeyshare.OnekeyShare;
+=======
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.ImageLoader.ImageListener;
@@ -58,7 +67,10 @@ public class MainActivity extends Activity implements MainToFragmentRefrsh,
 	private View flipperView = null;
 	private TextView flipperTv = null;
 	private ImageView flipperIv = null;
+<<<<<<< HEAD
 	private TextView tv_list_wen = null;
+=======
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 
 	// 手势判断
 	private GestureDetector gestureDetector;
@@ -86,17 +98,25 @@ public class MainActivity extends Activity implements MainToFragmentRefrsh,
 	private Intent musicIntent = null;
 
 	// 基本控件
+<<<<<<< HEAD
 	private ImageView iv_main_music, iv_main_search;
+=======
+	private ImageView iv_main_music;
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 	private TextView tv_main_more;
 
 	// 滚动条
 	private SwipeRefreshLayout swiperefresh_wei;
+<<<<<<< HEAD
 	private boolean isRefresh = true;
 
 	// 数据
 	private String[] strs = { "听温暖的音乐，看感人的电影", "赏宁静的风景，交暖心的朋友",
 			"音乐，开心时入耳、伤心时入心", "时而不靠谱，时而不着调" };
 	private List<MusicModel> musicModels = new ArrayList<MusicModel>();
+=======
+	private boolean isRefresh=true;
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -108,6 +128,7 @@ public class MainActivity extends Activity implements MainToFragmentRefrsh,
 		initFrameWork();
 	}
 
+<<<<<<< HEAD
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
@@ -121,6 +142,8 @@ public class MainActivity extends Activity implements MainToFragmentRefrsh,
 		super.onActivityResult(requestCode, resultCode, data);
 	}
 
+=======
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 	/**
 	 * 初始化进度条
 	 */
@@ -141,7 +164,11 @@ public class MainActivity extends Activity implements MainToFragmentRefrsh,
 			@Override
 			public void run() {
 				swiperefresh_wei.setRefreshing(true);
+<<<<<<< HEAD
 				isRefresh = true;
+=======
+				isRefresh=true;
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 			}
 		});
 		swifRefushListener.onRefresh();
@@ -192,8 +219,12 @@ public class MainActivity extends Activity implements MainToFragmentRefrsh,
 	 * 初始化 View
 	 */
 	private void initView() {
+<<<<<<< HEAD
 		iv_main_search = (ImageView) findViewById(R.id.iv_main_search);
 		iv_main_search.setOnClickListener(this);
+=======
+
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 		tv_main_more = (TextView) findViewById(R.id.tv_main_more);
 		tv_main_more.setOnClickListener(this);
 		//
@@ -251,8 +282,11 @@ public class MainActivity extends Activity implements MainToFragmentRefrsh,
 					.findViewById(R.id.tv_list_item_num);
 			flipperIv = (ImageView) flipperView
 					.findViewById(R.id.iv_list_item_flipper);
+<<<<<<< HEAD
 			tv_list_wen = (TextView) flipperView.findViewById(R.id.tv_list_wen);
 			tv_list_wen.setText(strs[i] + "");
+=======
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 			flipperIv.setTag(VolleyHttpPath.RANDOM_IMAGE_URL);
 			flipperTv.setText((i + 1) + "/4");
 			imageListener = ImageLoader.getImageListener(flipperIv,
@@ -282,11 +316,18 @@ public class MainActivity extends Activity implements MainToFragmentRefrsh,
 		@Override
 		public void onItemClick(AdapterView<?> parent, View view, int position,
 				long id) {
+<<<<<<< HEAD
+=======
+			// showToast("点击了乡村 " + maps.get(gridItems.get(position)));
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 			Intent intent = new Intent(MainActivity.this,
 					MusicListActivity.class);
 			intent.putExtra("musictype", maps.get(gridItems.get(position)));
 			startActivity(intent);
+<<<<<<< HEAD
 			finish();
+=======
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 		}
 	}
 
@@ -333,6 +374,7 @@ public class MainActivity extends Activity implements MainToFragmentRefrsh,
 
 	@Override
 	public void getMusicModelList(List<MusicModel> models) {
+<<<<<<< HEAD
 		if (musicModels.size() == 0) {
 			musicModels.addAll(models);
 		}
@@ -343,11 +385,19 @@ public class MainActivity extends Activity implements MainToFragmentRefrsh,
 	}
 
 	private void startMusicService(List<MusicModel> models) {
+=======
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 		// 初始化 Service : 开启MUSIC服务
 		Intent intent = new Intent(MainActivity.this, MusicService.class);
 		intent.putExtra(MUSIC_INTENT_KEY, (Serializable) models);
 		intent.addFlags(MUSIC_INTENT_FLAG);
 		startService(intent);
+<<<<<<< HEAD
+=======
+		//关闭进度条
+		swiperefresh_wei.setRefreshing(false);
+		isRefresh=false;
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 	}
 
 	@Override
@@ -356,6 +406,11 @@ public class MainActivity extends Activity implements MainToFragmentRefrsh,
 		// 发送广播
 		musicIntent.putExtra(MAIN_MUSIC_INTENT_KEY, postion);
 		sendBroadcast(musicIntent);
+<<<<<<< HEAD
+=======
+		// showToast("item : " + postion);
+
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 	}
 
 	@Override
@@ -370,6 +425,7 @@ public class MainActivity extends Activity implements MainToFragmentRefrsh,
 			intent.putExtra("musictype", 26);
 			startActivity(intent);
 			break;
+<<<<<<< HEAD
 		case R.id.iv_main_search:
 			// finish();
 //			showToast("分享功能还未实现哦!");
@@ -391,6 +447,11 @@ public class MainActivity extends Activity implements MainToFragmentRefrsh,
 		oks.show(getApplicationContext());
 	}
 
+=======
+		}
+	}
+
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 	/**
 	 * 1.下拉刷新监听 下拉刷新
 	 */
@@ -398,7 +459,11 @@ public class MainActivity extends Activity implements MainToFragmentRefrsh,
 
 		@Override
 		public void onRefresh() {
+<<<<<<< HEAD
 			if (!isRefresh) {
+=======
+			if(!isRefresh){
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 				swiperefresh_wei.setRefreshing(isRefresh);
 			}
 		}
@@ -406,9 +471,15 @@ public class MainActivity extends Activity implements MainToFragmentRefrsh,
 
 	@Override
 	public void onFailListener() {
+<<<<<<< HEAD
 		// 消失进度条
 		swiperefresh_wei.setRefreshing(false);
 		isRefresh = false;
+=======
+		//消失进度条
+		swiperefresh_wei.setRefreshing(false);
+		isRefresh=false;
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 	}
 
 }

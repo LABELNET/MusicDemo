@@ -3,6 +3,7 @@ package cn.labelnet.fragment;
 import java.util.ArrayList;
 import java.util.List;
 
+<<<<<<< HEAD
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +11,8 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
+=======
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 import cn.labelnet.adapter.MusicListAdapter;
 import cn.labelnet.event.MainToFragmentRefrsh;
 import cn.labelnet.maskmusic.R;
@@ -17,13 +20,32 @@ import cn.labelnet.model.MusicModel;
 import cn.labelnet.net.MusicAsync;
 import cn.labelnet.net.MusicAsyncHandler;
 import cn.labelnet.net.MusicRequest;
+<<<<<<< HEAD
+=======
+import android.annotation.SuppressLint;
+import android.app.Fragment;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.Toast;
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 
 public class MainListViewFragment extends Fragment implements MusicAsync {
 
 	/**
+<<<<<<< HEAD
 	 * 热歌榜单实现 MainActivity界面内容填充
 	 */
 
+=======
+	 *  热歌榜单实现
+	 *   MainActivity界面内容填充
+	 */
+	
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 	// 数据请求
 	private MusicRequest musicRequest = null;
 	private MusicAsyncHandler musicHandler = null;
@@ -87,16 +109,24 @@ public class MainListViewFragment extends Fragment implements MusicAsync {
 		musicRequest = new MusicRequest();
 		musicRequest.setMusicAsyncHandler(musicHandler);
 	}
+<<<<<<< HEAD
 
 	@Override
 	public void setUserVisibleHint(boolean isVisibleToUser) {
 		if (isVisibleToUser) {
+=======
+	
+	@Override
+	public void setUserVisibleHint(boolean isVisibleToUser) {
+		if(isVisibleToUser){
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 			musicRequest.requestStringData(5);
 		}
 	}
 
 	@Override
 	public void onSuccess(List<MusicModel> mms) {
+<<<<<<< HEAD
 		try {
 			// 给MainActivity返回size
 			mainToFragmentRefrsh.changeFragmentHeight(mms.size());
@@ -106,6 +136,18 @@ public class MainListViewFragment extends Fragment implements MusicAsync {
 			musicAdapter.notifyDataSetChanged();
 		} catch (Exception e) {
 		}
+=======
+
+		// 给MainActivity返回size
+		mainToFragmentRefrsh.changeFragmentHeight(mms.size());
+		mainToFragmentRefrsh.getMusicModelList(mms);
+		// 请求成功
+//		String name = mms.get(1).getSingername();
+//		showToast(name);
+//		Log.i("MaskMusic", name);
+		mmsList.addAll(mms);
+		musicAdapter.notifyDataSetChanged();
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 
 	}
 

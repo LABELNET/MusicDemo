@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
+<<<<<<< HEAD
     <item android:drawable="@color/app_color_whrit" android:state_pressed="true"></item>
+=======
+    <item android:drawable="@color/text_color_main" android:state_pressed="true"></item>
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
     <item android:drawable="@color/text_color_whrit"></item>
 
 </selector>

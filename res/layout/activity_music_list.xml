@@ -38,11 +38,16 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/list_top"
         android:orientation="vertical" >
+<<<<<<< HEAD
+=======
+
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
         <android.support.v7.widget.RecyclerView
             android:id="@+id/list_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </android.support.v4.widget.SwipeRefreshLayout>
+<<<<<<< HEAD
 
     <TextView
         android:id="@+id/tv_list_item_show"
@@ -55,5 +60,20 @@
         android:text="@string/maskmusic_welcome"
         android:textColor="@color/app_color_zhu"
         android:textSize="20sp" />
+=======
+    
+    <TextView 
+        android:id="@+id/tv_list_item_show"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="@string/maskmusic_welcome"
+        android:textColor="@color/app_color_zhu"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/app_color_whrit"
+        />
+>>>>>>> ba27915b8498c21cafabb10f1d1b7bb29acab918
 
 </RelativeLayout>
